@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chtmod",
+  "name": "CWS Hyper Traffic Mod",
+  "description": "A minecraft mod with some traffic blocks.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/HyperCWS/chtmod",
+  "updateUrl": "",
+  "authorList": ["cws"],
+  "credits": "TheGreyGhost,CWS and MCForge",
+  "logoFile": "cwsmod.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

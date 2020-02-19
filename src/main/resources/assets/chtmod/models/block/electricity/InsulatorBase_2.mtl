@@ -1,0 +1,16 @@
+# Created by Metasequoia
+
+newmtl Insulator0
+Ka 0.48000 0.48000 0.48000
+Kd 0.64000 0.64000 0.64000
+
+
+map_Kd chtmod:blocks/iron_rust
+
+newmtl Insulator1
+Ka 0.48000 0.48000 0.48000
+Kd 0.64000 0.64000 0.64000
+
+
+map_Kd chtmod:blocks/whitemetals
+

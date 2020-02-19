@@ -1,0 +1,64 @@
+{
+    "variants": {
+        "facing=north,style=0": {
+            "model": "chtmod:pole/Light0"
+        },
+        "facing=east,style=0": {
+            "model": "chtmod:pole/Light0",
+            "y": 90
+        },
+        "facing=south,style=0": {
+            "model": "chtmod:pole/Light0",
+            "y": 180
+        },
+        "facing=west,style=0": {
+            "model": "chtmod:pole/Light0",
+            "y": 270
+        },
+        "facing=north,style=1": {
+            "model": "chtmod:pole/Light1.obj"
+        },
+        "facing=east,style=1": {
+            "model": "chtmod:pole/Light1.obj",
+            "y": 90
+        },
+        "facing=south,style=1": {
+            "model": "chtmod:pole/Light1.obj",
+            "y": 180
+        },
+        "facing=west,style=1": {
+            "model": "chtmod:pole/Light1.obj",
+            "y": 270
+        },
+        "facing=north,style=2": {
+            "model": "chtmod:pole/Light2.obj"
+        },
+        "facing=east,style=2": {
+            "model": "chtmod:pole/Light2.obj",
+            "y": 90
+        },
+        "facing=south,style=2": {
+            "model": "chtmod:pole/Light2.obj",
+            "y": 180
+        },
+        "facing=west,style=2": {
+            "model": "chtmod:pole/Light2.obj",
+            "y": 270
+        },
+        "facing=north,style=3": {
+            "model": "chtmod:pole/Light3"
+        },
+        "facing=east,style=3": {
+            "model": "chtmod:pole/Light3",
+            "y": 90
+        },
+        "facing=south,style=3": {
+            "model": "chtmod:pole/Light3",
+            "y": 180
+        },
+        "facing=west,style=3": {
+            "model": "chtmod:pole/Light3",
+            "y": 270
+        }
+    }
+}

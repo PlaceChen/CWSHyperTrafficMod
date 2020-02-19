@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"back": "chtmod:blocks/gray",
+		"sgn": "chtmod:blocks/sign/working3"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 15],
+			"to": [32, 32, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#back"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#sgn"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#back"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#back"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#back"}
+			}
+		}
+	]
+}

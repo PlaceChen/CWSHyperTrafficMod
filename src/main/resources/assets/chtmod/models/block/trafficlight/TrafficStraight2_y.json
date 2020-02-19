@@ -1,0 +1,6 @@
+{
+    "parent": "chtmod:block/trafficlight/TLS3",
+    "textures": {
+        "particle": "chtmod:blocks/trafficlights/TCsty"
+    }
+}

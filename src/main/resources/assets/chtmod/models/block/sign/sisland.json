@@ -1,0 +1,6 @@
+{
+    "parent": "chtmod:block/sign/SIGNHorizontal",
+    "textures": {
+        "sgn": "chtmod:blocks/sign/sisland"
+    }
+}

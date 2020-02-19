@@ -1,0 +1,6 @@
+{
+	"parent": "chtmod:block/roadlight/RoadLightStyle2",
+	"textures": {
+		"particle": "chtmod:blocks/blue"
+	}
+}
