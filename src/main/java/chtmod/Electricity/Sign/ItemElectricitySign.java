@@ -68,9 +68,15 @@ public class ItemElectricitySign extends Item {
 						StartupCommon.es.getDefaultState().withProperty(ElectricitySign.PROPERTYFACING, pf));
 				try {
 					TileEntityElectricitySignEntity tese = (TileEntityElectricitySignEntity) worldIn.getTileEntity(p);
-					tese.number = stack.getTagCompound().getInteger("NUMBER");
+					NBTTagCompound nbt = new NBTTagCompound();
+					int n = stack.getTagCompound().getInteger("NUMBER");
+					String tex = stack.getTagCompound().getString("TEXTURE");
+					tese.number = n;
 					tese.facing = pf.getHorizontalIndex();
-					tese.texture = stack.getTagCompound().getString("TEXTURE");
+					tese.texture = tex;
+					nbt.setString("TEXTURE", tex);
+					nbt.setInteger("NUMBER", n + 1);
+					stack.setTagCompound(nbt);
 				} catch (Exception ex) {
 					System.out.println(ex.getMessage());
 				}
