@@ -14,11 +14,11 @@ public class StartupCommon {
 			new PoleRotation("SlopeThin", new int[] { 2, 16, 2, 16, 16, 16, 16, 16 }, false),
 			new PoleRotation("SlopeThinUpper", new int[] { 2, 16, 2, 16, 16, 16, 16, 16 }, false),
 			new PoleRotation("Connector", new int[] { 4, 10, 4, 10, 16, 2, 16, 2 }, false,
-					new int[] { 0, 16, 0, 16, 7, 2, 7, 2 }),
+					new int[] { 0, 1, 15, 1, 7, 2, 7, 2 }),
 			new PoleRotation("Light", new int[] { 16, 16, 4, 10, 4, 10, 16, 16 }, true,
 					new int[] { 7, 2, 0, 10, 6, 10, 7, 2 }) };
 	public static IPole[] iprt = new IPole[prt.length];
-	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 16, 4, 16, 16, 16, 16, 4, 16, 4, 16 });
+	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 16, 4, 16, 4, 4, 16, 4, 16, 4, 16 });
 	public static IPole ipc = new IPole(pc);
 	public static PoleBase[] blocks = { new PoleVertical("VerticalThick", 6, 16, 0),
 			new PoleVertical("RoadFence1", 4, 16, 0), new PoleVertical("RoadFence2", 4, 16, 0),

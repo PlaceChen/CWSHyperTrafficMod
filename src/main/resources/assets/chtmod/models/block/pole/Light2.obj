@@ -1,6 +1,6 @@
 # Created by Metasequoia
 
-mtllib Light1.mtl
+mtllib Light.mtl
 
 v 0.375000 0.375000 0.000000
 v 0.375000 0.405590 0.193136

@@ -36,6 +36,7 @@ public class PoleCentre extends PoleBase {
 	public PoleCentre(String arg0, int[] arg1) {
 		super(arg0);
 		width = arg1;
+		this.connectWith = false;
 	}
 
 	@Override
