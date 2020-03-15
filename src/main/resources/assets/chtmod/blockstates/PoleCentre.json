@@ -1,17 +1,17 @@
 {
 	"variants": {
 		"facing=true,style=0": {
-			"model": "chtmod:pole/Centre0.obj"
+			"model": "chtmod:pole/Centre0"
 		},
 		"facing=false,style=0": {
-			"model": "chtmod:pole/Centre0.obj",
+			"model": "chtmod:pole/Centre0",
 			"y": 90
 		},
 		"facing=true,style=1": {
-			"model": "chtmod:pole/Centre1.obj"
+			"model": "chtmod:pole/Centre1"
 		},
 		"facing=false,style=1": {
-			"model": "chtmod:pole/Centre1.obj",
+			"model": "chtmod:pole/Centre1",
 			"y": 90
 		},
 
