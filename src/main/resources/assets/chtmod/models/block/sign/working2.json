@@ -1,6 +1,6 @@
 {
     "parent": "chtmod:block/sign/SIGNHorizontal",
     "textures": {
-        "sgn": "chtmod:blocks/sign/working2"
+        "particle": "chtmod:blocks/sign/working2"
     }
 }

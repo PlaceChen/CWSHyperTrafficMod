@@ -1,6 +1,6 @@
 {
     "parent": "chtmod:block/sign/SIGN",
     "textures": {
-        "sgn": "chtmod:blocks/sign/people"
+        "particle": "chtmod:blocks/sign/people"
     }
 }

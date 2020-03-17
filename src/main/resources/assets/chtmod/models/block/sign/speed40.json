@@ -1,6 +1,6 @@
 {
     "parent": "chtmod:block/sign/SIGN",
     "textures": {
-        "sgn": "chtmod:blocks/sign/speed40"
+        "particle": "chtmod:blocks/sign/speed40"
     }
 }

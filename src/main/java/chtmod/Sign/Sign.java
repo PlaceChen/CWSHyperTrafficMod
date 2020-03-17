@@ -69,18 +69,22 @@ public class Sign extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		switch (state.getValue(PROPERTYFACING)) {
-		case EAST:
-			return new AxisAlignedBB(0, 0, 0, 10 / 16F, 1, 1);
-		case WEST:
-			return new AxisAlignedBB(6 / 16F, 0, 0, 1, 1, 1);
-		case NORTH:
-			return new AxisAlignedBB(0, 0, 6 / 16F, 1, 1, 1);
-		case SOUTH:
-			return new AxisAlignedBB(0, 0, 0, 1, 1, 10 / 16F);
-		default:
-			return FULL_BLOCK_AABB;
-		}
+		EnumFacing f = state.getValue(PROPERTYFACING);
+		if (this.getUnlocalizedName().contains("Block"))
+			switch (f) {
+			case EAST:
+				return new AxisAlignedBB(0, 0, 0, 10 / 16F, 1, 1);
+			case WEST:
+				return new AxisAlignedBB(6 / 16F, 0, 0, 1, 1, 1);
+			case NORTH:
+				return new AxisAlignedBB(0, 0, 6 / 16F, 1, 1, 1);
+			case SOUTH:
+				return new AxisAlignedBB(0, 0, 0, 1, 1, 10 / 16F);
+			default:
+				return FULL_BLOCK_AABB;
+			}
+		else
+			return chtmod.AABB.RotationBox(f, 16, 2, 0, 16);
 	}
 
 	@Override

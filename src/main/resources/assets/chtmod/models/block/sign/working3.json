@@ -2,19 +2,19 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"back": "chtmod:blocks/gray",
-		"sgn": "chtmod:blocks/sign/working3"
+		"particle": "chtmod:blocks/sign/working3"
 	},
 	"elements": [
 		{
-			"from": [-16, 0, 15],
-			"to": [32, 32, 16],
+			"from": [0, 0, 0],
+			"to": [16, 16, 2],
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#back"},
-				"east": {"uv": [0, 0, 0, 0], "texture": "#back"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#sgn"},
-				"west": {"uv": [0, 0, 0, 0], "texture": "#back"},
-				"up": {"uv": [0, 0, 0, 0], "texture": "#back"},
-				"down": {"uv": [0, 0, 0, 0], "texture": "#back"}
+				"east": {"uv": [16, 16, 14, 0], "texture": "#back"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#particle"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#back"},
+				"up": {"uv": [0, 0, 16, 2], "texture": "#back"},
+				"down": {"uv": [0, 14, 16, 16], "texture": "#back"}
 			}
 		}
 	]
