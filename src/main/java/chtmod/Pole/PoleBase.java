@@ -56,7 +56,7 @@ public class PoleBase extends Block {
 	protected boolean isValidBlock(IBlockAccess access, BlockPos pos) {
 		Block b = access.getBlockState(pos).getBlock();
 		if (b instanceof PoleBase) {
-			if (b instanceof PoleRotation && b.getUnlocalizedName().contains("Light")) {
+			if (b instanceof PoleRotation && b.getUnlocalizedName().endsWith("Light")) {
 				int s = access.getBlockState(pos).getValue(PoleRotation.PROPERTYSTYLE);
 				return s == 1 || s == 2;
 			} else {

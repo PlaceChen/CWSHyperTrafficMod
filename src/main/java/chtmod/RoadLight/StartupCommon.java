@@ -9,15 +9,16 @@ public class StartupCommon {
 	public static FBLight rlight0 = new FBLight("RoadLight0");
 	public static ItemBlock irlight0 = (ItemBlock) new ItemBlock(rlight0).setRegistryName(rlight0.getRegistryName());
 	public static NRLight lights[] = new NRLight[] { new NRLight("RoadLight1", 1), new NRLight("RoadLight2", 1),
-			new NRLight("RoadLight3", 1), new NRLight("RoadLight4", 2), new NRLight("RoadLight5", 0, false) };
-	public static ItemBlock[] inrlights = new ItemBlock[5];
+			new NRLight("RoadLight3", 1), new NRLight("RoadLight4", 2), new NRLight("RoadLight5", 0, false),
+			new NRLight("RoadLight6", 0, false) };
+	public static ItemBlock[] inrlights = new ItemBlock[lights.length];
 
 	public static void preInitCommon() {
 		GameRegistry.register(rlight);
 		GameRegistry.register(irlight);
 		GameRegistry.register(rlight0);
 		GameRegistry.register(irlight0);
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < lights.length; i++) {
 			ItemBlock light = (ItemBlock) new ItemBlock(lights[i]).setRegistryName(lights[i].getRegistryName());
 			GameRegistry.register(lights[i]);
 			inrlights[i] = light;

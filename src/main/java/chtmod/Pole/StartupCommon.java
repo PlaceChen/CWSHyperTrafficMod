@@ -16,7 +16,9 @@ public class StartupCommon {
 			new PoleRotation("Connector", new int[] { 4, 10, 4, 10, 16, 2, 16, 2 }, false,
 					new int[] { 0, 1, 15, 1, 7, 2, 7, 2 }),
 			new PoleRotation("Light", new int[] { 16, 32, 4, 10, 4, 10, 16, 32 }, false,
-					new int[] { 6, 4, 0, 10, 6, 10, 6, 4 }) };
+					new int[] { 6, 4, 0, 10, 6, 10, 6, 4 }),
+			new PoleRotation("Light2", new int[] { 4, 26, 6, 32, 4, 48, 4, 32 }, false,
+					new int[] { 0, 32, 0, 26, 4, 36, 4, 20 }) };
 	public static IPole[] iprt = new IPole[prt.length];
 
 	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 16, 4, 16, 4, 4, 16, 4, 16, 4, 16 });
