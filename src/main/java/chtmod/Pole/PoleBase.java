@@ -55,9 +55,14 @@ public class PoleBase extends Block {
 
 	protected boolean isValidBlock(IBlockAccess access, BlockPos pos) {
 		Block b = access.getBlockState(pos).getBlock();
-		if (b instanceof PoleBase)
-			return ((PoleBase) b).connectWith;
-		else if (b instanceof BlockFence || b instanceof Sign)
+		if (b instanceof PoleBase) {
+			if (b instanceof PoleRotation && b.getUnlocalizedName().contains("Light")) {
+				int s = access.getBlockState(pos).getValue(PoleRotation.PROPERTYSTYLE);
+				return s == 1 || s == 2;
+			} else {
+				return ((PoleBase) b).connectWith;
+			}
+		} else if (b instanceof BlockFence || b instanceof Sign)
 			return true;
 		else if (b instanceof Light) {
 			Light l = (Light) b;

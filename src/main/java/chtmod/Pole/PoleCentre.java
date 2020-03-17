@@ -45,8 +45,7 @@ public class PoleCentre extends PoleBase {
 		float x2 = (8 + (width[sid] / 2)) / 16F;
 		float y1 = (8 - (width[sid + 1] / 2)) / 16F;
 		float y2 = (8 + (width[sid + 1] / 2)) / 16F;
-		boolean f = state.getValue(PROPERTYFACING);
-		if (f)
+		if (state.getValue(PROPERTYFACING))
 			return new AxisAlignedBB(x1, y1, 0, x2, y2, 1);
 		else
 			return new AxisAlignedBB(0, y1, x1, 1, y2, x2);

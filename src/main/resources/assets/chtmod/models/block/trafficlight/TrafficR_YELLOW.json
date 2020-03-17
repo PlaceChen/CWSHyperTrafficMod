@@ -1,6 +1,6 @@
 {
     "parent": "chtmod:block/trafficlight/TLBRT",
     "textures": {
-        "particle": "chtmod:blocks/trafficlights/TBry"
+        "particle": "chtmod:blocks/trafficlights/Try"
     }
 }

@@ -6,7 +6,7 @@
                 "facing": "north"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_r"
+                "model": "chtmod:trafficlight/TrafficCircle3_r"
             }
         },
         {
@@ -15,7 +15,7 @@
                 "facing": "east"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_r",
+                "model": "chtmod:trafficlight/TrafficCircle3_r",
                 "y": 90
             }
         },
@@ -25,7 +25,7 @@
                 "facing": "south"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_r",
+                "model": "chtmod:trafficlight/TrafficCircle3_r",
                 "y": 180
             }
         },
@@ -35,7 +35,7 @@
                 "facing": "west"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_r",
+                "model": "chtmod:trafficlight/TrafficCircle3_r",
                 "y": 270
             }
         },
@@ -45,7 +45,7 @@
                 "facing": "north"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_y"
+                "model": "chtmod:trafficlight/TrafficCircle3_y"
             }
         },
         {
@@ -54,7 +54,7 @@
                 "facing": "east"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_y",
+                "model": "chtmod:trafficlight/TrafficCircle3_y",
                 "y": 90
             }
         },
@@ -64,7 +64,7 @@
                 "facing": "south"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_y",
+                "model": "chtmod:trafficlight/TrafficCircle3_y",
                 "y": 180
             }
         },
@@ -74,7 +74,7 @@
                 "facing": "west"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_y",
+                "model": "chtmod:trafficlight/TrafficCircle3_y",
                 "y": 270
             }
         },
@@ -84,7 +84,7 @@
                 "facing": "north"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_g"
+                "model": "chtmod:trafficlight/TrafficCircle3_g"
             }
         },
         {
@@ -93,7 +93,7 @@
                 "facing": "east"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_g",
+                "model": "chtmod:trafficlight/TrafficCircle3_g",
                 "y": 90
             }
         },
@@ -103,7 +103,7 @@
                 "facing": "south"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_g",
+                "model": "chtmod:trafficlight/TrafficCircle3_g",
                 "y": 180
             }
         },
@@ -113,7 +113,7 @@
                 "facing": "west"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_g",
+                "model": "chtmod:trafficlight/TrafficCircle3_g",
                 "y": 270
             }
         },
@@ -123,7 +123,7 @@
                 "facing": "north"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_e"
+                "model": "chtmod:trafficlight/TrafficCircle3_e"
             }
         },
         {
@@ -132,7 +132,7 @@
                 "facing": "east"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_e",
+                "model": "chtmod:trafficlight/TrafficCircle3_e",
                 "y": 90
             }
         },
@@ -142,7 +142,7 @@
                 "facing": "south"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_e",
+                "model": "chtmod:trafficlight/TrafficCircle3_e",
                 "y": 180
             }
         },
@@ -152,7 +152,7 @@
                 "facing": "west"
             },
             "apply": {
-                "model": "chtmod:trafficlight/TrafficCircle2_e",
+                "model": "chtmod:trafficlight/TrafficCircle3_e",
                 "y": 270
             }
         },

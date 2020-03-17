@@ -1,9 +1,9 @@
 {
-	"credit": "Made with Blockbench",
+	"parent": "chtmod:block/trafficlight/DISP",
 	"textures": {
-		"bk": "chtmod:blocks/trafficlights/TBback",
+		"bk": "chtmod:blocks/trafficlights/Tback",
 		"side": "chtmod:blocks/yellow",
-		"s": "chtmod:blocks/trafficlights/yside"
+		"s": "chtmod:blocks/trafficlights/Yside"
 	},
 	"elements": [
 		{
@@ -42,39 +42,5 @@
 				"west": {"uv": [0, 0, 11, 14], "texture": "#s"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"rotation": [60, 180, 0],
-			"translation": [0, 2, 0],
-			"scale": [0.35, 0.35, 0.35]
-		},
-		"thirdperson_lefthand": {
-			"rotation": [60, -180, 0],
-			"translation": [0, 2, 0],
-			"scale": [0.35, 0.35, 0.35]
-		},
-		"firstperson_righthand": {
-			"rotation": [0, -60, 0],
-			"translation": [4.5, 2, 0],
-			"scale": [0.5, 0.5, 0.5]
-		},
-		"firstperson_lefthand": {
-			"rotation": [0, -60, 0],
-			"translation": [4.5, 2, 0],
-			"scale": [0.5, 0.5, 0.5]
-		},
-		"ground": {
-			"scale": [0.35, 0.35, 0.35]
-		},
-		"gui": {
-			"rotation": [15, 30, 0],
-			"translation": [0.5, -0.5, 0],
-			"scale": [0.65, 0.65, 0.65]
-		},
-		"fixed": {
-			"rotation": [0, 180, 0],
-			"translation": [0, 0, -5]
-		}
-	}
+	]
 }

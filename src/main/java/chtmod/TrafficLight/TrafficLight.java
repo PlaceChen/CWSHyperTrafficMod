@@ -62,12 +62,12 @@ public class TrafficLight extends Block {
 
 	@Override
 	public boolean isFullCube(IBlockState iBlockState) {
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean isFullBlock(IBlockState iBlockState) {
-		return false;
+		return true;
 	}
 
 	@Override
@@ -77,7 +77,54 @@ public class TrafficLight extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return AABB.setBound(state, styleID);
+		EnumFacing facing = state.getValue(PROPERTYFACING);
+		int x = 16, z = 16, top = 0, height = 16;
+		switch (styleID) {
+		case 1:
+			z = 13;
+			break;
+		case 2:
+			x = 12;
+			top = -14;
+			height = 44;
+			break;
+		case 3:
+			x = 14;
+			z = 12;
+			top = -10;
+			height = 36;
+			break;
+		case 4:
+			x = 38;
+			z = 12;
+			top = 1;
+			height = 14;
+			break;
+		case 5:
+			z = 21;
+			height = 32;
+			break;
+		case 6:
+			z = 21;
+			x = 20;
+			height = 32;
+			break;
+		case 7:
+			top = -16;
+			height = 48;
+			break;
+		case 8:
+			x = 48;
+			break;
+		case 9:
+			x = 48;
+			z = 12;
+			break;
+		case 10:
+			x = 32;
+			break;
+		}
+		return chtmod.AABB.RotationBox(facing, x, z, top, height);
 	}
 
 	@Override

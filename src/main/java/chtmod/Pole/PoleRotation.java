@@ -27,7 +27,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class PoleRotation extends PoleBase {
-	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing",
+			EnumFacing.Plane.HORIZONTAL);
 	public static final PropertyInteger PROPERTYSTYLE = PropertyInteger.create("style", 0, 3);
 	public int[] width;
 	public int[] height;
@@ -36,13 +37,7 @@ public class PoleRotation extends PoleBase {
 		super(arg0);
 		this.connectWith = arg2;
 		width = arg1;
-		int h[] = new int[8];
-		for (int i = 0; i < 8; i++)
-			if (i % 2 == 0)
-				h[i] = 0;
-			else
-				h[i] = 16;
-		height = h;
+		height = new int[] { 0, 16, 0, 16, 0, 16, 0, 16 };
 	}
 
 	public PoleRotation(String arg0, int[] arg1, boolean arg2, int[] arg3) {
@@ -54,24 +49,7 @@ public class PoleRotation extends PoleBase {
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		int style = state.getValue(PROPERTYSTYLE) * 2;
 		EnumFacing f = state.getValue(PROPERTYFACING);
-		int x = width[style];
-		int z = width[style + 1];
-		float x1 = (8 - (x / 2)) / 16F;
-		float x2 = (8 + (x / 2)) / 16F;
-		float y1 = height[style] / 16F;
-		float y2 = (height[style] + height[style + 1]) / 16F;
-		switch (f) {
-		case EAST:
-			return new AxisAlignedBB((16 - z) / 16F, y1, x1, 1, y2, x2);
-		case NORTH:
-			return new AxisAlignedBB(x1, y1, 0, x2, y2, z / 16F);
-		case SOUTH:
-			return new AxisAlignedBB(x1, y1, (16 - z) / 16F, x2, y2, 1);
-		case WEST:
-			return new AxisAlignedBB(0, y1, x1, z / 16F, y2, x2);
-		default:
-			return FULL_BLOCK_AABB;
-		}
+		return chtmod.AABB.RotationBox(f, width[style], width[style + 1], height[style], height[style + 1]);
 	}
 
 	@Override
