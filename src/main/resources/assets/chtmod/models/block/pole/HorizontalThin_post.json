@@ -31,7 +31,11 @@
 			"translation": [8, 0, 0]
 		},
 		"gui": {
-			"rotation": [30, 45, 0]
+			"rotation": [30, 60, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0]
 		}
 	}
 }

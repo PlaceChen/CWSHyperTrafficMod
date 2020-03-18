@@ -8,6 +8,7 @@ tile.BlockBitumen1.name=沥青方块
 tile.BlockBitumen2.name=沥青方块(旧)
 tile.PoleVerticalThick.name=粗杆
 tile.PoleVerticalThin.name=细杆
+tile.PoleVerticalThickThin.name=粗转细杆
 tile.PoleVerticalUpper.name=偏上杆
 tile.PoleVerticalLower.name=偏下杆
 tile.PoleVerticalSlope.name=倾斜的偏下杆

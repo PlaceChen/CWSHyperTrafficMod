@@ -17,19 +17,20 @@ public class StartupCommon {
 					new int[] { 0, 1, 15, 1, 7, 2, 7, 2 }),
 			new PoleRotation("Light", new int[] { 16, 32, 4, 10, 4, 10, 16, 32 }, false,
 					new int[] { 6, 4, 0, 10, 6, 10, 6, 4 }),
-			new PoleRotation("Light2", new int[] { 4, 26, 6, 32, 4, 48, 4, 32 }, false,
+			new PoleRotation("Light2", new int[] { 4, 26, 6, 48, 4, 48, 4, 32 }, false,
 					new int[] { 0, 32, 0, 26, 4, 36, 4, 20 }) };
 	public static IPole[] iprt = new IPole[prt.length];
 
 	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 16, 4, 16, 4, 4, 16, 4, 16, 4, 16 });
 	public static IPole ipc = new IPole(pc);
 	public static PoleBase[] blocks = { new PoleVertical("VerticalThick", 6, 16, 0),
-			new PoleVertical("RoadFence1", 4, 16, 0), new PoleVertical("RoadFence2", 4, 16, 0),
-			new PoleVertical("RoadFence3", 4, 16, 0), new PoleVertical("RoadFence4", 4, 16, 0),
-			new PoleVertical("VerticalThin", 4, 16, 0), new PoleVertical("VerticalSlope", 6, 10, 0),
-			new PoleVertical("VerticalCentre", 4, 4, 6), new PoleVertical("VerticalUpper", 4, 10, 6),
-			new PoleVertical("VerticalLower", 4, 10, 0), new PoleHorizontal("HorizontalThin", 4, 4, 6),
-			new PoleHorizontal("HorizontalDouble", 4, 16, 0), new PoleSide("SideThin", 4) };
+			new PoleVertical("VerticalThickThin", 6, 16, 0), new PoleVertical("RoadFence1", 4, 16, 0),
+			new PoleVertical("RoadFence2", 4, 16, 0), new PoleVertical("RoadFence3", 4, 16, 0),
+			new PoleVertical("RoadFence4", 4, 16, 0), new PoleVertical("VerticalThin", 4, 16, 0),
+			new PoleVertical("VerticalSlope", 6, 10, 0), new PoleVertical("VerticalCentre", 4, 4, 6),
+			new PoleVertical("VerticalUpper", 4, 10, 6), new PoleVertical("VerticalLower", 4, 10, 0),
+			new PoleHorizontal("HorizontalThin", 4, 4, 6), new PoleHorizontal("HorizontalDouble", 4, 16, 0),
+			new PoleSide("SideThin", 4) };
 
 	public static ItemBlock[] items = new ItemBlock[blocks.length];
 
