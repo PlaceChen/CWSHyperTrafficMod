@@ -1,5 +1,6 @@
 package chtmod.RoadBlock;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -12,7 +13,7 @@ public class StartupCommon {
 			new RoadBlock("RoadBlockYellow", new AxisAlignedBB(0, 0, 0, 1, 1 / 16f, 1)),
 			new RoadBlock("RoadBlockWhite", new AxisAlignedBB(0, 0, 0, 1, 1 / 16f, 1)),
 			new RoadBlock("LightBottom", new AxisAlignedBB(0, 0, 0, 1, 1, 1)),
-			new RoadBlock("BlockNotice", new AxisAlignedBB(0.125f, 0, 0.125f, 0.875f, 1, 0.875f)) };
+			new RoadBlock("BlockNotice",Block.FULL_BLOCK_AABB) };
 	public static ItemBlock[] items = new ItemBlock[7];
 
 	public static void preInitCommon() {

@@ -38,12 +38,12 @@ public class Light extends Block {
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return new AxisAlignedBB(0, 2 / 16f, 0, 1, 11 / 16f, 1);
+		return new AxisAlignedBB(0, 5 / 16f, 0, 1, 11 / 16f, 1);
 	}
 
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.TRANSLUCENT;
+		return BlockRenderLayer.SOLID;
 	}
 
 	@Override

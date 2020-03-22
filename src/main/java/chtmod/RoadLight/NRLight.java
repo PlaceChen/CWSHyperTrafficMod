@@ -47,7 +47,7 @@ public class NRLight extends Light {
 
 	@SideOnly(Side.CLIENT)
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.CUTOUT;
+		return BlockRenderLayer.SOLID;
 	}
 
 	@Override
@@ -70,28 +70,11 @@ public class NRLight extends Light {
 				break;
 			}
 		case 2:
-			float y1 = 4 / 16F;
-			float y2 = 12 / 16F;
-			AxisAlignedBB normal = new AxisAlignedBB(0, y1, 0, 1, y2, 1);
-			AxisAlignedBB n = new AxisAlignedBB(0, y1, -7 / 16F, 1, y2, 0);
-			AxisAlignedBB s = new AxisAlignedBB(0, y1, 1, 1, y2, 23 / 16F);
-			AxisAlignedBB w = new AxisAlignedBB(-7 / 16F, y1, 0, 0, y2, 1);
-			AxisAlignedBB e = new AxisAlignedBB(1, y1, 0, 23 / 16F, y2, 1);
-			switch (state.getValue(PROPERTYFACING)) {
-			case EAST:
-				return normal.union(w);
-			case NORTH:
-				return normal.union(s);
-			case SOUTH:
-				return normal.union(n);
-			case WEST:
-				return normal.union(e);
-			default:
-				break;
-			}
-		default:
-			return FULL_BLOCK_AABB;
+			return chtmod.AABB.RotationBox(facing, 16, 28, 6, 7);
+		case 3:
+			return chtmod.AABB.RotationBox(facing, 12, 32, 5, 5);
 		}
+		return FULL_BLOCK_AABB;
 	}
 
 	@Override

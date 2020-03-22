@@ -14,7 +14,7 @@ public class StartupClientOnly {
 		GameRegistry.register(ims);
 		ModelLoader.setCustomModelResourceLocation(ims, 0,
 				new ModelResourceLocation("chtmod:sign/ItemMetroSign", "inventory"));
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 7; i++)
 			ModelLoader.setCustomModelResourceLocation(isp, i,
 					new ModelResourceLocation("chtmod:sign/ItemPlus", "inventory"));
 		for (ISign is : StartupCommon.isign) {

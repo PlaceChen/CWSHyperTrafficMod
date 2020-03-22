@@ -55,7 +55,7 @@ public class TileEntitySignRenderer extends TileEntitySpecialRenderer<TileEntity
 	}
 
 	private double[][] vertexTable(int size) {
-		int x1 = 0, x2 = 1, y1 = 0, y2 = 1;
+		double x1 = 0, x2 = 1, y1 = 0, y2 = 1;
 		double z = 0.01 / 16F;
 		switch (size) {
 		case 1:// 3x1
@@ -87,6 +87,12 @@ public class TileEntitySignRenderer extends TileEntitySpecialRenderer<TileEntity
 			x2 = 3;
 			y1 = -2;
 			y2 = 2;
+			break;
+		case 6:// 2.81x5.62
+			x1 = -0.905;
+			x2 = 1.905;
+			y1 = 0;
+			y2 = 5.62;
 			break;
 		}
 		return new double[][] { { x2, y1, z, 1, 1 }, { x2, y2, z, 1, 0 }, { x1, y2, z, 0, 0 }, { x1, y1, z, 0, 1 } };

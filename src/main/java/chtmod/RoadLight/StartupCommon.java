@@ -10,7 +10,7 @@ public class StartupCommon {
 	public static ItemBlock irlight0 = (ItemBlock) new ItemBlock(rlight0).setRegistryName(rlight0.getRegistryName());
 	public static NRLight lights[] = new NRLight[] { new NRLight("RoadLight1", 1), new NRLight("RoadLight2", 1),
 			new NRLight("RoadLight3", 1), new NRLight("RoadLight4", 2), new NRLight("RoadLight5", 0, false),
-			new NRLight("RoadLight6", 0, false) };
+			new NRLight("RoadLight6", 0, false), new NRLight("RoadLight7", 3, false) };
 	public static ItemBlock[] inrlights = new ItemBlock[lights.length];
 
 	public static void preInitCommon() {

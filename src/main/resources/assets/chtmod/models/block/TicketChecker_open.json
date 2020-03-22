@@ -2,21 +2,19 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "chtmod:blocks/red",
-		"particle": "chtmod:blocks/whitemetals",
-		"3": "chtmod:blocks/sign/stopgo",
-		"4": "chtmod:blocks/sign/go"
+		"particle": "blocks/iron_block"
 	},
 	"elements": [
 		{
 			"from": [15.5, 0, 0],
 			"to": [16, 24, 16],
 			"faces": {
-				"north": {"uv": [0.5, 0, 1, 16], "texture": "#particle"},
+				"north": {"uv": [0, 0, 0.5, 16], "texture": "#particle"},
 				"east": {"uv": [16, 16, 0, 0], "texture": "#particle"},
-				"south": {"uv": [15, 0, 15.5, 16], "texture": "#particle"},
+				"south": {"uv": [15.5, 0, 16, 16], "texture": "#particle"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#particle"},
-				"up": {"uv": [15, 0, 15.5, 16], "texture": "#particle"},
-				"down": {"uv": [15, 0, 15.5, 16], "texture": "#particle"}
+				"up": {"uv": [15.5, 0, 16, 16], "texture": "#particle"},
+				"down": {"uv": [15.5, 0, 16, 16], "texture": "#particle"}
 			}
 		},
 		{
@@ -29,20 +27,6 @@
 				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"up": {"uv": [0, 0, 3, 16], "texture": "#0"},
 				"down": {"uv": [0, 0, 3, 16], "texture": "#0"}
-			}
-		},
-		{
-			"from": [0, 13, -0.01],
-			"to": [3, 16, -0.01],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#3"}
-			}
-		},
-		{
-			"from": [0, 13, 16.01],
-			"to": [3, 16, 16.01],
-			"faces": {
-				"south": {"uv": [0, 0, 16, 16], "texture": "#4"}
 			}
 		}
 	]

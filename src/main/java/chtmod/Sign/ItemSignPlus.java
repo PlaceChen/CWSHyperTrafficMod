@@ -35,7 +35,7 @@ public class ItemSignPlus extends Item {
 
 	@Override
 	public void getSubItems(Item itemIn, CreativeTabs tab, List subItems) {
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 7; i++)
 			subItems.add(new ItemStack(itemIn, 1, i));
 	}
 
