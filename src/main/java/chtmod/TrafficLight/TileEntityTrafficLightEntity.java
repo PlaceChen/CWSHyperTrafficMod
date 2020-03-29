@@ -65,10 +65,19 @@ public class TileEntityTrafficLightEntity extends TileEntity implements ITickabl
 	public void update() {
 		if (!start)
 			return;
-		// int second = (int) (this.getWorld().getWorldTime()%(maximumValue*10))/10;
 		int second = (int) (this.getWorld().getWorldTime() / 10) % maximumValue;
 		for (int i = 0; i < times.length; i++) {
-			if (second == times[i]) {
+			int starttime = times[i], endtime = -1;
+			boolean condition = false;
+			if (i == times.length - 1)
+				endtime = times[0];
+			else
+				endtime = times[i + 1];
+			if (starttime > endtime)
+				condition = (second >= starttime && second < maximumValue) || (second < endtime);
+			else
+				condition = (second >= starttime && second < endtime);
+			if (condition) {
 				IBlockState state = this.getWorld().getBlockState(this.pos);
 				if (state.getBlock() instanceof TrafficLight) {
 					EnumColour c = EnumColour.byMetadata(colors[i]);
