@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "chtmod:blocks/trafficlights/Tside3",
+		"1": "chtmod:blocks/black",
+		"particle": "chtmod:blocks/trafficlights/Tside3"
+	},
+	"elements": [
+		{
+			"name": "m",
+			"from": [0, 0, 6.01],
+			"to": [16, 16, 6.01],
+			"faces": {
+				"south": {"uv": [0, 0, 16, 16], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [1, 1, 6],
+			"to": [1, 15, 16],
+			"faces": {
+				"east": {"uv": [10, 0, 0, 14], "texture": "#0"},
+				"west": {"uv": [0, 0, 10, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [15, 1, 6],
+			"to": [15, 15, 16],
+			"faces": {
+				"east": {"uv": [10, 0, 0, 14], "texture": "#0"},
+				"west": {"uv": [0, 0, 10, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 15, 6],
+			"to": [15, 15, 16],
+			"faces": {
+				"up": {"uv": [1, 6, 15, 16], "texture": "#1"},
+				"down": {"uv": [1, 0, 15, 10], "texture": "#1"}
+			}
+		}
+	]
+}

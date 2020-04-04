@@ -65,8 +65,8 @@ public class GUISetCycle extends GUICommon {
 			if (txtTime.getText().isEmpty() && txtColor.getText().isEmpty())
 				return;
 			int maxValue = MathTools.str2Int(txtMax.getText());
-			if (maxValue < 3)
-				maxValue = 360;
+			if (maxValue < 4)
+				maxValue = 4;
 			String times[] = txtTime.getText().split(" ");
 			String colors[] = txtColor.getText().split(" ");
 			int[] inttime = new int[times.length];

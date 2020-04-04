@@ -6,8 +6,8 @@
 	},
 	"elements": [
 		{
-			"from": [-16, 0, 2.01],
-			"to": [32, 16, 2.01],
+			"from": [-16, 0, 2.1],
+			"to": [32, 16, 2.1],
 			"faces": {
 				"north": {"uv": [0, 0, 16, 16], "texture": "#back"},
 				"south": {"uv": [0, 0, 16, 16], "texture": "#particle"}

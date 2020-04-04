@@ -21,7 +21,7 @@ public class TileEntityTrafficLightEntity extends TileEntity implements ITickabl
 
 	public TileEntityTrafficLightEntity() {
 		start = false;
-		maximumValue = 360;
+		maximumValue = 4;
 		times = new int[0];
 		colors = new int[0];
 	}
@@ -82,6 +82,7 @@ public class TileEntityTrafficLightEntity extends TileEntity implements ITickabl
 				if (state.getBlock() instanceof TrafficLight) {
 					EnumColour c = EnumColour.byMetadata(colors[i]);
 					this.getWorld().setBlockState(this.pos, state.withProperty(TrafficLight.PROPERTYCOLOUR, c));
+					return;
 				}
 			}
 		}

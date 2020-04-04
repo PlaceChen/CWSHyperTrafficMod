@@ -2,6 +2,7 @@ package chtmod.TrafficLight;
 
 import java.util.List;
 
+import chtmod.MathTools;
 import chtmod.Sign.GUISetSign;
 import net.minecraft.block.Block;
 import net.minecraft.block.properties.PropertyDirection;
@@ -30,33 +31,70 @@ public class ItemCycle extends Item {
 		this.setMaxStackSize(1);
 		this.setUnlocalizedName("ItemCycle");
 		this.setRegistryName("ItemCycle");
+		this.hasSubtypes = true;
 		this.setCreativeTab(chtmod.CwsCreativeTabs.tlightTab);
 	}
 
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn,
+	public void getSubItems(Item itemIn, CreativeTabs tab, List subItems) {
+		for (int i = 0; i < 3; i++)
+			subItems.add(new ItemStack(itemIn, 1, i));
+	}
+
+	@Override
+	public int getMetadata(int metadata) {
+		return metadata;
+	}
+
+	@Override
+	public String getUnlocalizedName(ItemStack stack) {
+		return super.getUnlocalizedName() + "." + stack.getMetadata();
+	}
+
+	@Override
+	public ActionResult<ItemStack> onItemRightClick(ItemStack stack, World worldIn, EntityPlayer playerIn,
 			EnumHand hand) {
-		if (!worldIn.isRemote)
-			Minecraft.getMinecraft().displayGuiScreen(new GUISetCycle(itemStackIn));
-		return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+		if (stack.getMetadata() == 0)
+			if (!worldIn.isRemote)
+				Minecraft.getMinecraft().displayGuiScreen(new GUISetCycle(stack));
+		return new ActionResult(EnumActionResult.SUCCESS, stack);
 	}
 
 	@Override
 	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		if (stack.hasTagCompound() && worldIn.getBlockState(pos).getBlock() instanceof TrafficLight) {
+		if (worldIn.getBlockState(pos).getBlock() instanceof TrafficLight) {
 			try {
 				TileEntityTrafficLightEntity tetle = (TileEntityTrafficLightEntity) worldIn.getTileEntity(pos);
-				NBTTagCompound tag = stack.getTagCompound();
-				tetle.times = tag.getIntArray("TIME");
-				tetle.colors = tag.getIntArray("COLOR");
-				tetle.maximumValue = tag.getInteger("MAX");
-				tetle.start = true;
+				if (stack.hasTagCompound() && stack.getMetadata() == 0) {
+					NBTTagCompound tag = stack.getTagCompound();
+					tetle.times = tag.getIntArray("TIME");
+					tetle.colors = tag.getIntArray("COLOR");
+					tetle.maximumValue = tag.getInteger("MAX");
+					tetle.start = true;
+					if (worldIn.isRemote)
+						playerIn.addChatComponentMessage(
+								new TextComponentString(I18n.format("gui.setsuccess", new Object[0])));
+				} else if (stack.getMetadata() == 1) {
+					tetle.times = new int[0];
+					tetle.colors = new int[0];
+					tetle.maximumValue = 4;
+					tetle.start = false;
+					IBlockState state = worldIn.getBlockState(pos);
+					worldIn.setBlockState(pos, state.withProperty(TrafficLight.PROPERTYCOLOUR, EnumColour.EMPTY));
+				} else if (stack.getMetadata() == 2) {
+					String shstr[] = { "gui.setcycle", "gui.settime", "gui.setcolor",
+							String.valueOf(tetle.maximumValue), MathTools.arr2Str(tetle.times),
+							MathTools.arr2Str(tetle.colors) };
+					if (worldIn.isRemote)
+						for (int i = 0; i <= 2; i++)
+							playerIn.addChatComponentMessage(
+									new TextComponentString(I18n.format(shstr[i], new Object[0]) + ":" + shstr[i + 3]));
+				}
 			} catch (Exception ex) {
 				System.out.println(ex.getMessage());
+				return EnumActionResult.FAIL;
 			}
-			if (worldIn.isRemote)
-				playerIn.addChatComponentMessage(new TextComponentString(I18n.format("gui.setsuccess", new Object[0])));
 		}
 		return EnumActionResult.SUCCESS;
 	}

@@ -10,7 +10,9 @@ public class StartupClientOnly {
 
 	public static void preInitClientOnly() {
 		GameRegistry.register(ic);
-		ModelLoader.setCustomModelResourceLocation(ic, 0, new ModelResourceLocation("chtmod:ItemCycle", "inventory"));
+		for (int i = 0; i < 3; i++)
+			ModelLoader.setCustomModelResourceLocation(ic, i,
+					new ModelResourceLocation("chtmod:ItemCycle", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ct, 0,
 				new ModelResourceLocation("chtmod:ConnectTraffic", "inventory"));
 		for (ItemBlock itb : StartupCommon.itl) {

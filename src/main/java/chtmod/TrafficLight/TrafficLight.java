@@ -123,6 +123,10 @@ public class TrafficLight extends Block {
 		case 10:
 			x = 32;
 			break;
+		case 11:
+			height = 32;
+			z = 15;
+			break;
 		}
 		return chtmod.AABB.RotationBox(facing, x, z, top, height);
 	}
