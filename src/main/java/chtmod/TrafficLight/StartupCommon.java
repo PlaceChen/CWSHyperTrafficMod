@@ -16,7 +16,7 @@ public class StartupCommon {
 			new TrafficLight("Circle", 1), new TrafficLight("Circle1", 3), new TrafficLight("Circle2", 7),
 			new TrafficLight("Circle3", 8), new TrafficLight("People", 1), new TrafficLight("People1", 5),
 			new TrafficLight("People2", 6), new TrafficLight("People3", 11), new TrafficLight("People4", 0),
-			new TrafficLight("L", 0) };
+			new TrafficLight("People5", 5), new TrafficLight("L", 0) };
 	public static ItemBlock[] itl;
 	public static BlockSignalProvider sp = new BlockSignalProvider();
 	public static ItemConnectTraffic ct = new ItemConnectTraffic();
