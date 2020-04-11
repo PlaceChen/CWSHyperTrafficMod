@@ -25,19 +25,16 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class NRLight extends Light {
+public class RotationLight extends Light {
 	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing",
 			EnumFacing.Plane.HORIZONTAL);
-	private int style;
 
-	public NRLight(String arg0, int arg1) {
-		super(arg0);
-		style = arg1;
+	public RotationLight(String arg0, int arg1) {
+		super(arg0, arg1);
 	}
 
-	public NRLight(String arg0, int arg1, boolean arg2) {
-		this(arg0, arg1);
-		this.connectedPole = arg2;
+	public RotationLight(String arg0, int arg1, boolean arg2) {
+		super(arg0, arg1, arg2);
 	}
 
 	@Override
@@ -73,6 +70,10 @@ public class NRLight extends Light {
 			return chtmod.AABB.RotationBox(facing, 16, 28, 6, 7);
 		case 3:
 			return chtmod.AABB.RotationBox(facing, 12, 32, 5, 5);
+		case 4:
+			return chtmod.AABB.RotationBox(facing, 16, 48, -7, 71);
+		case 5:
+			return new AxisAlignedBB(0, 4 / 16f, 0, 1, 11 / 16f, 1);
 		}
 		return FULL_BLOCK_AABB;
 	}

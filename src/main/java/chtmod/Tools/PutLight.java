@@ -47,13 +47,13 @@ public class PutLight extends Item {
 	@Override
 	public EnumActionResult onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos,
 			EnumHand hand, EnumFacing f, float hitX, float hitY, float hitZ) {
-		IBlockState l = chtmod.RoadLight.StartupCommon.rlight.getDefaultState();
+		IBlockState l = chtmod.RoadLight.StartupCommon.lights[0].getDefaultState();
 		IBlockState thick = Block.getBlockFromName("chtmod:PoleVerticalThick").getDefaultState();
 		IBlockState thin = Block.getBlockFromName("chtmod:PoleVerticalThin").getDefaultState();
 		IBlockState cen0 = Block.getBlockFromName("chtmod:PoleHorizontalThin").getDefaultState();
 		IBlockState bottom = Block.getBlockFromName("chtmod:PoleVerticalLower").getDefaultState();
 		IBlockState top = Block.getBlockFromName("chtmod:PoleVerticalUpper").getDefaultState();
-		IBlockState lattern = chtmod.RoadLight.StartupCommon.rlight0.getDefaultState();
+		IBlockState lattern = Blocks.SEA_LANTERN.getDefaultState();
 		int x = pos.getX();
 		int y = pos.getY() + 1;
 		int z = pos.getZ();

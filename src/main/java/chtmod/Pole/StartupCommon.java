@@ -21,7 +21,7 @@ public class StartupCommon {
 					new int[] { 0, 32, 0, 26, 4, 36, 4, 20 }) };
 	public static IPole[] iprt = new IPole[prt.length];
 
-	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 16, 4, 16, 4, 4, 16, 4, 16, 4, 16 });
+	public static PoleCentre pc = new PoleCentre("Centre", new int[] { 2, 16, 2, 16, 4, 16, 4, 16, 4, 16 });
 	public static IPole ipc = new IPole(pc);
 	public static PoleBase[] blocks = { new PoleVertical("VerticalThick", 6, 16, 0),
 			new PoleVertical("VerticalThickThin", 6, 16, 0), new PoleVertical("RoadFence1", 4, 16, 0),

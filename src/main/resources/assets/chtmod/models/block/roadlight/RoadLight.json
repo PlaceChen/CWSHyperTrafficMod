@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"l": "chtmod:blocks/light",
+		"l": "chtmod:blocks/lightglass2",
 		"particle": "chtmod:blocks/whitemetals"
 	},
 	"elements": [
@@ -19,10 +19,14 @@
 		},
 		{
 			"name": "light",
-			"from": [2.1, 4.99, 2.1],
-			"to": [13.9, 4.99, 13.9],
+			"from": [2.1, 4, 2.1],
+			"to": [14.1, 5, 14.1],
 			"faces": {
-				"down": {"uv": [0, 0, 16, 16], "texture": "#l"}
+				"north": {"uv": [2, 0, 14, 1], "texture": "#l"},
+				"east": {"uv": [14, 1, 2, 0], "texture": "#l"},
+				"south": {"uv": [2, 0, 14, 1], "texture": "#l"},
+				"west": {"uv": [2, 0, 14, 1], "texture": "#l"},
+				"down": {"uv": [2.1, 1.9, 14.1, 13.9], "texture": "#l"}
 			}
 		}
 	],

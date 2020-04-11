@@ -13,8 +13,8 @@ public class StartupCommon {
 			new RoadBlock("RoadBlockYellow", new AxisAlignedBB(0, 0, 0, 1, 1 / 16f, 1)),
 			new RoadBlock("RoadBlockWhite", new AxisAlignedBB(0, 0, 0, 1, 1 / 16f, 1)),
 			new RoadBlock("LightBottom", new AxisAlignedBB(0, 0, 0, 1, 1, 1)),
-			new RoadBlock("BlockNotice",Block.FULL_BLOCK_AABB) };
-	public static ItemBlock[] items = new ItemBlock[7];
+			new RoadBlock("BlockNotice", Block.FULL_BLOCK_AABB), new RoadBlock("Block45Pole", Block.FULL_BLOCK_AABB) };
+	public static ItemBlock[] items = new ItemBlock[blocks.length];
 
 	public static void preInitCommon() {
 		for (int i = 0; i < blocks.length; i++) {

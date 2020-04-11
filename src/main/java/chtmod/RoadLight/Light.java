@@ -19,8 +19,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class Light extends Block {
 	public boolean connectedPole;
+	protected int style;
 
-	public Light(String arg0) {
+	public Light(String arg0, int arg1) {
 		super(Material.ROCK);
 		this.setUnlocalizedName(arg0);
 		this.setRegistryName(arg0);
@@ -29,16 +30,26 @@ public class Light extends Block {
 		this.setHardness(1);
 		this.setLightLevel(2);
 		connectedPole = true;
+		style = arg1;
 	}
 
-	public Light(String arg0, boolean arg1) {
-		this(arg0);
-		connectedPole = arg1;
+	public Light(String arg0, int arg1, boolean arg2) {
+		this(arg0, arg1);
+		connectedPole = arg2;
 	}
 
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-		return new AxisAlignedBB(0, 5 / 16f, 0, 1, 11 / 16f, 1);
+		switch (style) {
+		case 1:
+			return new AxisAlignedBB(0, 4 / 16f, 0, 1, 11 / 16f, 1);
+		case 2:
+			return new AxisAlignedBB(-5 / 16f, -80 / 16f, -5 / 16f, 21 / 16f, 6 / 16f, 21 / 16f);
+		case 3:
+			return new AxisAlignedBB(-27 / 16f, 0, -27 / 16f, 43 / 16f, 80 / 16f, 43 / 16f);
+		default:
+			return FULL_BLOCK_AABB;
+		}
 	}
 
 	@SideOnly(Side.CLIENT)
