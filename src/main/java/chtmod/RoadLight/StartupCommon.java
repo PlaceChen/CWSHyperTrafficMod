@@ -10,7 +10,7 @@ public class StartupCommon {
 			new RotationLight("RoadLight6", 0, false), new RotationLight("RoadLight7", 3),
 			new RotationLight("RoadLight8", 4, false), new Light("RoadLight9", 2, false),
 			new Light("RoadLight10", 3, false), new Light("RoadLight11", 0, false), new RotationLight("RoadLight12", 5),
-			new RotationLight("RoadLight13", 3) };
+			new RotationLight("RoadLight13", 6) };
 	public static ItemBlock[] inrlights = new ItemBlock[lights.length];
 
 	public static void preInitCommon() {

@@ -32,6 +32,8 @@ public class StartupClientOnly {
 				new ModelResourceLocation("chtmod:TicketSeller", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.iep, 0,
 				new ModelResourceLocation("chtmod:electricity/ElectricityPole", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(StartupCommon.iep2, 0,
+				new ModelResourceLocation("chtmod:electricity/ElectricityPole2", "inventory"));
 		ModelLoader.setCustomModelResourceLocation(StartupCommon.ieph, 0,
 				new ModelResourceLocation("chtmod:electricity/ElectricityPoleHorizontal", "inventory"));
 		for (int i = 0; i < 4; i++)

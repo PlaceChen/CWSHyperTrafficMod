@@ -1,9 +1,9 @@
-package chtmod.RoadLight;
+package chtmod.RoadBlock;
 
 import java.util.List;
 
+import chtmod.SoundBlock.TileEntitySoundEntity;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -14,6 +14,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumFacing;
@@ -25,16 +26,37 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class RotationLight extends Light {
+public class BlockNotice2 extends Block {
 	public static final PropertyDirection PROPERTYFACING = PropertyDirection.create("facing",
 			EnumFacing.Plane.HORIZONTAL);
 
-	public RotationLight(String arg0, int arg1) {
-		super(arg0, arg1);
+	public BlockNotice2() {
+		super(Material.ROCK);
+		this.setCreativeTab(chtmod.CwsCreativeTabs.blockTab);
+		this.setRegistryName("BlockNotice2");
+		this.setUnlocalizedName("BlockNotice2");
+		this.setHardness(0.5f);
+		this.setLightLevel(1);
 	}
 
-	public RotationLight(String arg0, int arg1, boolean arg2) {
-		super(arg0, arg1, arg2);
+	@SideOnly(Side.CLIENT)
+	public BlockRenderLayer getBlockLayer() {
+		return BlockRenderLayer.CUTOUT;
+	}
+
+	@Override
+	public boolean isOpaqueCube(IBlockState iBlockState) {
+		return false;
+	}
+
+	@Override
+	public boolean isFullCube(IBlockState iBlockState) {
+		return false;
+	}
+
+	@Override
+	public boolean isFullBlock(IBlockState iBlockState) {
+		return true;
 	}
 
 	@Override
@@ -42,56 +64,24 @@ public class RotationLight extends Light {
 		return EnumBlockRenderType.MODEL;
 	}
 
-	@SideOnly(Side.CLIENT)
-	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.SOLID;
-	}
-
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		EnumFacing facing = state.getValue(PROPERTYFACING);
-		AxisAlignedBB ns = new AxisAlignedBB(3 / 16F, 5 / 16F, 0, 13 / 16F, 11 / 16F, 1);
-		AxisAlignedBB we = new AxisAlignedBB(0, 5 / 16F, 3 / 16F, 1, 11 / 16F, 13 / 16F);
-		switch (style) {
-		case 1:
-			switch (facing) {
-			case EAST:
-				return we;
-			case NORTH:
-				return ns;
-			case SOUTH:
-				return ns;
-			case WEST:
-				return we;
-			default:
-				break;
-			}
-		case 2:
-			return chtmod.AABB.RotationBox(facing, 16, 32, 5, 7);
-		case 3:
-			return chtmod.AABB.RotationBox(facing, 18, 48, 5, 7);
-		case 4:
-			return chtmod.AABB.RotationBox(facing, 16, 48, -7, 71);
-		case 5:
-			return chtmod.AABB.RotationBox(facing, 18, 26, 4, 9);
-		case 6:
-			return chtmod.AABB.RotationBox(facing, 18, 48, 4, 9);
-		}
-		return FULL_BLOCK_AABB;
+		if (facing == EnumFacing.NORTH || facing == EnumFacing.SOUTH)
+			return new AxisAlignedBB(0, 0, 5 / 16f, 1, 6 / 16f, 11 / 16f);
+		else
+			return new AxisAlignedBB(5 / 16f, 0, 0, 11 / 16f, 6 / 16f, 1);
 	}
 
 	@Override
 	public IBlockState getStateFromMeta(int meta) {
 		EnumFacing facing = EnumFacing.getHorizontal(meta);
-		int colourbits = (meta & 0x0c) >> 2;
 		return this.getDefaultState().withProperty(PROPERTYFACING, facing);
 	}
 
 	@Override
 	public int getMetaFromState(IBlockState state) {
-		EnumFacing facing = (EnumFacing) state.getValue(PROPERTYFACING);
-		int facingbits = facing.getHorizontalIndex();
-		return facingbits;
+		return state.getValue(PROPERTYFACING).getHorizontalIndex();
 	}
 
 	@Override

@@ -18,8 +18,10 @@ public class StartupCommon {
 	public static TicketSeller tcs = new TicketSeller();
 	public static ItemBlock itcs = (ItemBlock) new ItemBlock(tcs).setRegistryName(tcs.getRegistryName());
 	public static ItemTicket ticket = new ItemTicket();
-	public static ElectricityPole ep = new ElectricityPole();
+	public static ElectricityPole ep = new ElectricityPole("ElectricityPole");
 	public static ItemBlock iep = (ItemBlock) new ItemBlock(ep).setRegistryName(ep.getRegistryName());
+	public static ElectricityPole ep2 = new ElectricityPole("ElectricityPole2");
+	public static ItemBlock iep2 = (ItemBlock) new ItemBlock(ep2).setRegistryName(ep2.getRegistryName());
 	public static Insulator ib = new Insulator("InsulatorBase");
 	public static ItemInsulator iib = new ItemInsulator(ib);
 	public static Pole elp = new Pole();
@@ -46,6 +48,8 @@ public class StartupCommon {
 		GameRegistry.register(itcs);
 		GameRegistry.register(ep);
 		GameRegistry.register(iep);
+		GameRegistry.register(ep2);
+		GameRegistry.register(iep2);
 		GameRegistry.register(ib);
 		GameRegistry.register(iib);
 		GameRegistry.register(eph);

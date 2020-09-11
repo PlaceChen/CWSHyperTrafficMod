@@ -15,6 +15,8 @@ public class StartupCommon {
 			new RoadBlock("LightBottom", new AxisAlignedBB(0, 0, 0, 1, 1, 1)),
 			new RoadBlock("BlockNotice", Block.FULL_BLOCK_AABB), new RoadBlock("Block45Pole", Block.FULL_BLOCK_AABB) };
 	public static ItemBlock[] items = new ItemBlock[blocks.length];
+	public static BlockNotice2 bn2 = new BlockNotice2();
+	public static ItemBlock ibn2 = (ItemBlock) new ItemBlock(bn2).setRegistryName(bn2.getRegistryName());
 
 	public static void preInitCommon() {
 		for (int i = 0; i < blocks.length; i++) {
@@ -23,6 +25,8 @@ public class StartupCommon {
 			items[i] = ib;
 			GameRegistry.register(ib);
 		}
+		GameRegistry.register(bn2);
+		GameRegistry.register(ibn2);
 	}
 
 }

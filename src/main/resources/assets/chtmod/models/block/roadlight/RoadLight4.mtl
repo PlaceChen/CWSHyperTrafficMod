@@ -1,12 +1,12 @@
 # Created by Metasequoia
 
-newmtl RoadLight4
-map_Kd chtmod:blocks/blue
-
-newmtl Light
-map_Kd chtmod:blocks/light
-
-newmtl White
+newmtl mat1
 Ka 0.60000 0.60000 0.60000
 Kd 0.80000 0.80000 0.80000
+map_Kd chtmod:blocks/light2
+
+newmtl mat2
+Ka 0.60000 0.60000 0.60000
+Kd 0.80000 0.80000 0.80000
+map_Kd chtmod:blocks/blue
 

@@ -25,10 +25,10 @@ public class ElectricityPole extends Block {
 	public static final PropertyBool WEST = PropertyBool.create("west");
 	public static final PropertyBool EAST = PropertyBool.create("east");
 
-	protected ElectricityPole() {
+	protected ElectricityPole(String arg0) {
 		super(Material.ROCK);
-		this.setUnlocalizedName("ElectricityPole");
-		this.setRegistryName("ElectricityPole");
+		this.setUnlocalizedName(arg0);
+		this.setRegistryName(arg0);
 		this.setCreativeTab(chtmod.CwsCreativeTabs.sbTab);
 		this.setHardness(2);
 	}
