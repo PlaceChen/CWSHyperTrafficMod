@@ -161,7 +161,7 @@
                 "facing": "north"
             },
             "apply": {
-                "model": "chtmod:trafficlight/obj/Bike3.obj"
+                "model": "chtmod:trafficlight/obj/TLS4_horizontal.obj"
             }
         },
         {
@@ -169,7 +169,7 @@
                 "facing": "east"
             },
             "apply": {
-                "model": "chtmod:trafficlight/obj/Bike3.obj",
+                "model": "chtmod:trafficlight/obj/TLS4_horizontal.obj",
                 "y": 90
             }
         },
@@ -178,7 +178,7 @@
                 "facing": "south"
             },
             "apply": {
-                "model": "chtmod:trafficlight/obj/Bike3.obj",
+                "model": "chtmod:trafficlight/obj/TLS4_horizontal.obj",
                 "y": 180
             }
         },
@@ -187,7 +187,7 @@
                 "facing": "west"
             },
             "apply": {
-                "model": "chtmod:trafficlight/obj/Bike3.obj",
+                "model": "chtmod:trafficlight/obj/TLS4_horizontal.obj",
                 "y": 270
             }
         }
