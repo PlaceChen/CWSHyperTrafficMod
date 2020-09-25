@@ -50,22 +50,11 @@ public class RotationLight extends Light {
 	@Override
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 		EnumFacing facing = state.getValue(PROPERTYFACING);
-		AxisAlignedBB ns = new AxisAlignedBB(3 / 16F, 5 / 16F, 0, 13 / 16F, 11 / 16F, 1);
-		AxisAlignedBB we = new AxisAlignedBB(0, 5 / 16F, 3 / 16F, 1, 11 / 16F, 13 / 16F);
 		switch (style) {
+		case 0:
+			return chtmod.AABB.RotationBox(facing, 16, 32, 1, 14);
 		case 1:
-			switch (facing) {
-			case EAST:
-				return we;
-			case NORTH:
-				return ns;
-			case SOUTH:
-				return ns;
-			case WEST:
-				return we;
-			default:
-				break;
-			}
+			return chtmod.AABB.RotationBox(facing, 16, 32, 5, 9);
 		case 2:
 			return chtmod.AABB.RotationBox(facing, 16, 32, 5, 7);
 		case 3:
