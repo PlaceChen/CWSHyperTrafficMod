@@ -178,6 +178,7 @@ item.ToolPoleThin5.name=放置灯杆(细) *5
 item.ToolPoleThick5.name=放置灯杆(粗) *5
 item.ToolPoleThick10.name=放置灯杆(粗) *10
 item.ToolStairSpace.name=向左扩展电梯空间 *4
+item.ToolPutStoneUnder.name=向下填充石头
 tile.RoadLineWhite.a.name=白色线(标准)
 tile.RoadLineWhite.b.name=白色线(45°)
 tile.RoadLineWhite.c.name=白色线

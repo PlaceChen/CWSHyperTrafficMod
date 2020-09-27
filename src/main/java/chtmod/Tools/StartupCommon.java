@@ -22,6 +22,7 @@ public class StartupCommon {
 	public static RoadRulerCurved rrc = new RoadRulerCurved("RoadRulerCurvedBlock");
 	public static PutCurved pc = new PutCurved("ToolPutCurved");
 	public static StairSpace ss = new StairSpace("ToolStairSpace");
+	public static PutStoneUnder psu = new PutStoneUnder("ToolPutStoneUnder");
 
 	public static void preInitCommon() {
 		GameRegistry.register(rr);
@@ -40,5 +41,6 @@ public class StartupCommon {
 		GameRegistry.register(st);
 		GameRegistry.register(pc);
 		GameRegistry.register(ss);
+		GameRegistry.register(psu);
 	}
 }
