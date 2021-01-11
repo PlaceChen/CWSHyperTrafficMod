@@ -1,19 +1,16 @@
 {
-    "multipart": [
-        {
+    "multipart": [{
             "apply": {
                 "model": "chtmod:electricity/ElectricityPole2"
             }
-        },
-        {
+        }, {
             "when": {
                 "north": "true"
             },
             "apply": {
                 "model": "chtmod:electricity/ElectricityPole_side"
             }
-        },
-        {
+        }, {
             "when": {
                 "east": "true"
             },
@@ -21,8 +18,7 @@
                 "model": "chtmod:electricity/ElectricityPole_side",
                 "y": 90
             }
-        },
-        {
+        }, {
             "when": {
                 "south": "true"
             },
@@ -30,8 +26,7 @@
                 "model": "chtmod:electricity/ElectricityPole_side",
                 "y": 180
             }
-        },
-        {
+        }, {
             "when": {
                 "west": "true"
             },
@@ -39,20 +34,15 @@
                 "model": "chtmod:electricity/ElectricityPole_side",
                 "y": 270
             }
-        },
-        {
+        }, {
             "when": {
-                "OR": [
-                    {
+                "OR": [{
                         "north": "true"
-                    },
-                    {
+                    }, {
                         "east": "true"
-                    },
-                    {
+                    }, {
                         "south": "true"
-                    },
-                    {
+                    }, {
                         "west": "true"
                     }
                 ]

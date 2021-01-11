@@ -45,7 +45,7 @@
             "model": "chtmod:line/Right_c",
             "y": 270
         },
-		"angle=d,facing=north": {
+        "angle=d,facing=north": {
             "model": "chtmod:line/Right_d"
         },
         "angle=d,facing=east": {

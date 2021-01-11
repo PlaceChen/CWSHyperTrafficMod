@@ -1,6 +1,5 @@
 {
-    "multipart": [
-        {
+    "multipart": [{
             "when": {
                 "facing": "north",
                 "open": "false"
@@ -8,8 +7,7 @@
             "apply": {
                 "model": "chtmod:TicketChecker"
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "east",
                 "open": "false"
@@ -18,8 +16,7 @@
                 "model": "chtmod:TicketChecker",
                 "y": 90
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "south",
                 "open": "false"
@@ -28,8 +25,7 @@
                 "model": "chtmod:TicketChecker",
                 "y": 180
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "west",
                 "open": "false"
@@ -38,8 +34,7 @@
                 "model": "chtmod:TicketChecker",
                 "y": 270
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "north",
                 "open": "true"
@@ -47,8 +42,7 @@
             "apply": {
                 "model": "chtmod:TicketChecker_open"
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "east",
                 "open": "true"
@@ -57,8 +51,7 @@
                 "model": "chtmod:TicketChecker_open",
                 "y": 90
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "south",
                 "open": "true"
@@ -67,8 +60,7 @@
                 "model": "chtmod:TicketChecker_open",
                 "y": 180
             }
-        },
-        {
+        }, {
             "when": {
                 "facing": "west",
                 "open": "true"

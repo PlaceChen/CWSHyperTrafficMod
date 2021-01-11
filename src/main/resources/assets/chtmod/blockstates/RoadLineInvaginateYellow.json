@@ -45,7 +45,7 @@
             "model": "chtmod:line/Yellow_inv_c",
             "y": 270
         },
-		"angle=d,facing=north": {
+        "angle=d,facing=north": {
             "model": "chtmod:line/Yellow_inv_d"
         },
         "angle=d,facing=east": {

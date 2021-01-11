@@ -39,7 +39,7 @@
         },
         "facing=south,style=2": {
             "model": "chtmod:electricity/LightPole_2.obj",
-			"y": 180
+            "y": 180
         },
         "facing=west,style=2": {
             "model": "chtmod:electricity/LightPole_2.obj",
@@ -54,7 +54,7 @@
         },
         "facing=south,style=3": {
             "model": "chtmod:electricity/LightPole_3",
-			"y": 180
+            "y": 180
         },
         "facing=west,style=3": {
             "model": "chtmod:electricity/LightPole_3",

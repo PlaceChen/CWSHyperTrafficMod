@@ -1,7 +1,6 @@
 {
     "variants": {
-        "normal": [
-            {
+        "normal": [{
                 "model": "chtmod:BlockNotice.obj"
             }
         ]

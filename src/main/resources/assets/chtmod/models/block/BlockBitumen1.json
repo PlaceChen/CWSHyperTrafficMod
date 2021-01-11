@@ -1,6 +1,6 @@
 {
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "chtmod:blocks/bitumen1"
-	}
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "chtmod:blocks/bitumen1"
+    }
 }

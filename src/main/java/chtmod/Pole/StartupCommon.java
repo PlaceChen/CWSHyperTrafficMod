@@ -11,8 +11,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class StartupCommon {
 	public static PoleRotation[] prt = { new PoleRotation("Fence", new int[] { 16, 2, 16, 2, 16, 2, 16, 5 }, true),
 			new PoleRotation("Slope", new int[] { 4, 16, 4, 16, 4, 16, 4, 16 }, false),
-			new PoleRotation("SlopeThin", new int[] { 2, 16, 2, 16, 16, 16, 16, 16 }, false),
-			new PoleRotation("SlopeThinUpper", new int[] { 2, 16, 2, 16, 16, 16, 16, 16 }, false),
+			new PoleRotation("SlopeThin", new int[] { 4, 16, 4, 16, 16, 16, 16, 16 }, false),
+			new PoleRotation("SlopeThinUpper", new int[] { 4, 16, 4, 16, 16, 16, 16, 16 }, false),
 			new PoleRotation("Connector", new int[] { 4, 10, 4, 10, 16, 2, 16, 2 }, false,
 					new int[] { 0, 1, 15, 1, 7, 2, 7, 2 }),
 			new PoleRotation("Light", new int[] { 16, 32, 4, 10, 4, 10, 16, 32 }, false,

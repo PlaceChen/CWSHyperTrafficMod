@@ -1,1 +1,3 @@
-{"parent":"chtmod:block/trafficlight/TrafficCircle2_m"}
+{
+    "parent": "chtmod:block/trafficlight/TrafficCircle2_m"
+}

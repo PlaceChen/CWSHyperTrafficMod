@@ -1,19 +1,19 @@
 {
-	"variants": {
-		"facing=north": {
-			"model": "chtmod:sign/SignPlus"
-		},
-		"facing=east": {
-			"model": "chtmod:sign/SignPlus",
-			"y": 90
-		},
-		"facing=south": {
-			"model": "chtmod:sign/SignPlus",
-			"y": 180
-		},
-		"facing=west": {
-			"model": "chtmod:sign/SignPlus",
-			"y": 270
-		}
-	}
+    "variants": {
+        "facing=north": {
+            "model": "chtmod:sign/SignPlus"
+        },
+        "facing=east": {
+            "model": "chtmod:sign/SignPlus",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "chtmod:sign/SignPlus",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "chtmod:sign/SignPlus",
+            "y": 270
+        }
+    }
 }

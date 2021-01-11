@@ -1,14 +1,14 @@
 {
-	"parent": "chtmod:block/pole/SLOPEDISP",
 	"credit": "Made with Blockbench",
+	"parent": "chtmod:block/pole/SLOPEDISP",
 	"textures": {
 		"particle": "chtmod:blocks/whitemetals"
 	},
 	"elements": [
 		{
-			"from": [7.1, 0, -12.0406],
-			"to": [8.9, 2, 24.9594],
-			"rotation": {"angle": -22.5, "axis": "x", "origin": [8, 1.34081, 8.9594]},
+			"from": [7, 2.6935, 0.86514],
+			"to": [9, 4.6935, 8.86514],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 3.6935, 4.86514]},
 			"faces": {
 				"north": {"uv": [7.1, 14, 8.9, 16], "texture": "#particle"},
 				"east": {"uv": [0, 14, 16, 16], "texture": "#particle"},
@@ -18,5 +18,37 @@
 				"down": {"uv": [7.1, 0, 8.9, 16], "texture": "#particle"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, 0, 0],
+			"translation": [0, 0, 2.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [45, 0, 0],
+			"translation": [0, 0, 2.5],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -15, 0],
+			"translation": [7, 4, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [7, 4, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"ground": {
+			"translation": [0, 0.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, 45, 0],
+			"translation": [-1, 1, 0]
+		},
+		"fixed": {
+			"rotation": [0, -90, 0]
+		}
+	}
 }

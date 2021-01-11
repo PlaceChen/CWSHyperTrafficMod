@@ -1,5 +1,8 @@
 {
-    "multipart": [
-        {"apply": { "model": "chtmod:RoadLineMarker" }}
-	]
+    "multipart": [{
+            "apply": {
+                "model": "chtmod:RoadLineMarker"
+            }
+        }
+    ]
 }

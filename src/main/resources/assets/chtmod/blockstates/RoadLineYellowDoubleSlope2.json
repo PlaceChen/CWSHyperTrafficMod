@@ -45,7 +45,7 @@
             "model": "chtmod:line/YellowDoubleSlope2_c.obj",
             "y": 270
         },
-		"angle=d,facing=north": {
+        "angle=d,facing=north": {
             "model": "chtmod:line/YellowDoubleSlope2_d.obj"
         },
         "angle=d,facing=east": {

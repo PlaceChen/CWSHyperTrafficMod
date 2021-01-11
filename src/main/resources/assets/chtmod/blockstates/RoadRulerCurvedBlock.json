@@ -1,5 +1,8 @@
 {
-    "multipart": [
-        {"apply": { "model": "chtmod:RoadRuler" }}
-	]
+    "multipart": [{
+            "apply": {
+                "model": "chtmod:RoadRuler"
+            }
+        }
+    ]
 }

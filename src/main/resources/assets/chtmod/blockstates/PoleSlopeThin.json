@@ -1,33 +1,33 @@
 {
     "variants": {
         "facing=north,style=0": {
-            "model": "chtmod:pole/SlopeThin0"
+            "model": "chtmod:pole/SlopeThin0.obj"
         },
         "facing=east,style=0": {
-            "model": "chtmod:pole/SlopeThin0",
+            "model": "chtmod:pole/SlopeThin0.obj",
             "y": 90
         },
         "facing=south,style=0": {
-            "model": "chtmod:pole/SlopeThin0",
+            "model": "chtmod:pole/SlopeThin0.obj",
             "y": 180
         },
         "facing=west,style=0": {
-            "model": "chtmod:pole/SlopeThin0",
+            "model": "chtmod:pole/SlopeThin0.obj",
             "y": 270
         },
         "facing=north,style=1": {
-            "model": "chtmod:pole/SlopeThin1"
+            "model": "chtmod:pole/SlopeThin1.obj"
         },
         "facing=east,style=1": {
-            "model": "chtmod:pole/SlopeThin1",
+            "model": "chtmod:pole/SlopeThin1.obj",
             "y": 90
         },
         "facing=south,style=1": {
-            "model": "chtmod:pole/SlopeThin1",
+            "model": "chtmod:pole/SlopeThin1.obj",
             "y": 180
         },
         "facing=west,style=1": {
-            "model": "chtmod:pole/SlopeThin1",
+            "model": "chtmod:pole/SlopeThin1.obj",
             "y": 270
         },
         "facing=north,style=2": {

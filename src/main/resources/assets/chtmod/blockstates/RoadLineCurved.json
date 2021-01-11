@@ -1,5 +1,8 @@
 {
-    "multipart": [
-        {"apply": { "model": "chtmod:RoadLineCurved" }}
-	]
+    "multipart": [{
+            "apply": {
+                "model": "chtmod:RoadLineCurved"
+            }
+        }
+    ]
 }

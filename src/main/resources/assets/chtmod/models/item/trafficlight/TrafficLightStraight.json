@@ -1,1 +1,3 @@
-{	"parent": "chtmod:block/trafficlight/TrafficStraight_y"}
+{
+    "parent": "chtmod:block/trafficlight/TrafficStraight_y"
+}

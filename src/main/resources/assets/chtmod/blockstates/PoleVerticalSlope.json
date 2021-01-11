@@ -1,39 +1,39 @@
 {
-	"multipart": [{
-			"apply": {
-				"model": "chtmod:pole/VerticalSlope_post"
-			}
-		}, {
-			"when": {
-				"north": "true"
-			},
-			"apply": {
-				"model": "chtmod:pole/Light1.obj"
-			}
-		}, {
-			"when": {
-				"east": "true"
-			},
-			"apply": {
-				"model": "chtmod:pole/Light1.obj",
-				"y": 90
-			}
-		}, {
-			"when": {
-				"south": "true"
-			},
-			"apply": {
-				"model": "chtmod:pole/Light1.obj",
-				"y": 180
-			}
-		}, {
-			"when": {
-				"west": "true"
-			},
-			"apply": {
-				"model": "chtmod:pole/Light1.obj",
-				"y": 270
-			}
-		}
-	]
+    "multipart": [{
+            "apply": {
+                "model": "chtmod:pole/VerticalSlope_post"
+            }
+        }, {
+            "when": {
+                "north": "true"
+            },
+            "apply": {
+                "model": "chtmod:pole/Light1.obj"
+            }
+        }, {
+            "when": {
+                "east": "true"
+            },
+            "apply": {
+                "model": "chtmod:pole/Light1.obj",
+                "y": 90
+            }
+        }, {
+            "when": {
+                "south": "true"
+            },
+            "apply": {
+                "model": "chtmod:pole/Light1.obj",
+                "y": 180
+            }
+        }, {
+            "when": {
+                "west": "true"
+            },
+            "apply": {
+                "model": "chtmod:pole/Light1.obj",
+                "y": 270
+            }
+        }
+    ]
 }
